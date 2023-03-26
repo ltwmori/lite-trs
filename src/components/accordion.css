@@ -1,0 +1,30 @@
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color: #f6f8fa;
+  color: #5a5e63;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e2e6ea;
+}
+
+.accordion-body {
+  background-color: #fff;
+  padding: 1rem;
+  display: none;
+}
+
+:host([open]) .accordion-body {
+  display: block;
+}
